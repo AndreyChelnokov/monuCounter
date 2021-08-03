@@ -1,9 +1,9 @@
 import react from 'react';
 
-function Account() {
+function Type() {
     return (
-        <div>Аккаунт</div>
+        <div>Типы платежец</div>
     );
 }
 
-export default Account;
+export default Type;

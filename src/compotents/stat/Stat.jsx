@@ -1,9 +1,9 @@
 import react from 'react';
 
-function Account() {
+function Stat() {
     return (
-        <div>Аккаунт</div>
+        <div>Тут статистика</div>
     );
 }
 
-export default Account;
+export default Stat;

@@ -1,22 +1,23 @@
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import Menu from "./compotents/Menu/Menu";
+import Home from './compotents/home/Home';
+import Account from './compotents/account/Account';
+import Stat from "./compotents/stat/Stat";
+import Type from "./compotents/type/Type";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-wrap">
+      <div className="content">
+        <Switch>
+            <Route path='/account' component={Account} />
+            <Route path='/type' component={Type} />
+            <Route path='/stat' component={Stat} />
+            <Route exect path='/' component={Home} />
+        </Switch>
+      </div>
+      <Menu />
     </div>
   );
 }

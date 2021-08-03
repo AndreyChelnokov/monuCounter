@@ -1,9 +1,9 @@
 import react from 'react';
 
-function Home() {
+function Account() {
     return (
-        <div>Главная</div>
+        <div>Аккаунт</div>
     );
 }
 
-export default Home;
+export default Account;
